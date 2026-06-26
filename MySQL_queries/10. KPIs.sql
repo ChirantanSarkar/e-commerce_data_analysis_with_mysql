@@ -1,3 +1,4 @@
+#(KPIs)
 -- 1. Total Customers
 SELECT COUNT(*) AS total_customers
 FROM blinkit_customers;
