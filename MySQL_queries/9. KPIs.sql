@@ -31,10 +31,10 @@ FROM blinkit_marketing_performance;
 SELECT ROUND(SUM(revenue_generated),2) AS marketing_revenue
 FROM blinkit_marketing_performance;
 
--- 9. Total Damaged Stock
+-- 9. Total New Damaged Stock
 SELECT SUM(damaged_stock) AS damaged_stock
 FROM blinkit_inventorynew;
 
--- 10. Total Stock Received
+-- 10. Total New Stock Received
 SELECT SUM(stock_received) AS stock_received
 FROM blinkit_inventorynew;
