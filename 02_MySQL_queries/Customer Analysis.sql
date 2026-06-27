@@ -7,7 +7,7 @@ FROM blinkit_customers
 GROUP BY customer_segment
 ORDER BY Customers DESC;
 
--- Highest Spending Customers
+-- Highest Spending Customers by Average Order Value
 SELECT
 customer_name,
 avg_order_value
