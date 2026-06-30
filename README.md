@@ -131,37 +131,38 @@ ___
 ## 📁 Project Structure
 
 ```
-Blinkit-Ecommerce-SQL-Analysis/
-├──01_Datasetset/
-│    |-- blinkit_customers.csv
-│    |-- blinkit_orders.csv
-│    |-- blinkit_order_items.csv
-│    |-- blinkit_products.csv
-│    |-- blinkit_inventory.csv
-│    |-- blinkit_delivery_performance.csv
-│    |-- blinkit_customer_feedback.csv
-│    |-- blinkit_marketing_performance.csv
-│
-|--02_MySQL_queries/
-│    |-- data_exploration.sql
-│    |-- customer_analysis.sql
-│    |-- customer_feedback_analysis.sql
-│    |-- delivery_analysis.sql
-│    |-- inventory_analysis.sql
-│    |-- kpis.sql
-|    |-- marketting_analysis.sql
-|    |-- mysql_joins.sql
-|    |-- order_analysis.sql
-|    |-- product_analysis.sql
-│
-|--03_Project_report/
-|    |-- report.md
-|
-|--04_PowerBI_dashboard/
-|    |-- dashboard_image.png
-|    |-- powerbi_dashboard.pbix
-|
-|-- README.md
+e-commerce_data_analysis_with_mysql
+│   README.md
+│   
+├───01_Dataset
+│       blinkit_customers.csv
+│       blinkit_customer_feedback.csv
+│       blinkit_delivery_performance.csv
+│       blinkit_inventory.csv
+│       blinkit_inventoryNew.csv
+│       blinkit_marketing_performance.csv
+│       blinkit_orders.csv
+│       blinkit_order_items.csv
+│       blinkit_products.csv
+│       
+├───02_MySQL_queries
+│       customer_analysis.sql
+│       customer_feedback_analysis.sql
+│       data_exploration.sql
+│       delivery_analysis.sql
+│       inventory_analysis.sql
+│       kpis.sql
+│       marketting_analysis.sql
+│       mysql_joins.sql
+│       order_analysis.sql
+│       product_analysis.sql
+│       
+├───03_Project_report
+│       report.md
+│       
+└───04_PowerBI_dashboard
+        dashboard_image.png
+        powerbi_dashboard.pbix
 
 ```
 ___
