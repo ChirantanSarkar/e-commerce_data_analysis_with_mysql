@@ -169,6 +169,8 @@ ___
 * Build interactive dashboards using Power BI/Tableau.
 * Integrate Python for automated ETL and advanced analytics.
 
+<img width="1045" height="594" alt="image" src="https://github.com/user-attachments/assets/138a673c-a98c-4c47-a1ca-f0fa6ecc4dda" />
+
 ___
 
 ## Author
