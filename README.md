@@ -33,6 +33,7 @@ Steps
 * Monitor delivery efficiency and customer satisfaction.
 * Measure marketing campaign effectiveness.
 * Generate business insights using SQL.
+* Create an intractive dashboard.
 
 ___
 
@@ -40,6 +41,7 @@ ___
 
 * MySQL
 * MySQL Workbench
+* Power BI
 
 ___
 
@@ -56,6 +58,7 @@ ___
 * Views
 * Indexing
 * Business KPI Analysis
+* Intractive Dashboard Creation
 
 ___
 
@@ -129,24 +132,35 @@ ___
 
 ```
 Blinkit-Ecommerce-SQL-Analysis/
-├── Dataset/
-│   |-- blinkit_customers.csv
-│   |-- blinkit_orders.csv
-│   |-- blinkit_order_items.csv
-│   |-- blinkit_products.csv
-│   |-- blinkit_inventory.csv
-│   |-- blinkit_delivery_performance.csv
-│   |-- blinkit_customer_feedback.csv
-│   |-- blinkit_marketing_performance.csv
+├──01_Datasetset/
+│    |-- blinkit_customers.csv
+│    |-- blinkit_orders.csv
+│    |-- blinkit_order_items.csv
+│    |-- blinkit_products.csv
+│    |-- blinkit_inventory.csv
+│    |-- blinkit_delivery_performance.csv
+│    |-- blinkit_customer_feedback.csv
+│    |-- blinkit_marketing_performance.csv
 │
-|--SQL/
-│   |-- Database_Creation.sql
-│   |-- Data_Loading.sql
-│   |-- Data_Cleaning.sql
-│   |-- Exploratory_Analysis.sql
-│   |-- Business_Analysis.sql
-│   |-- KPI_Queries.sql
+|--02_MySQL_queries/
+│    |-- data_exploration.sql
+│    |-- customer_analysis.sql
+│    |-- customer_feedback_analysis.sql
+│    |-- delivery_analysis.sql
+│    |-- inventory_analysis.sql
+│    |-- kpis.sql
+|    |-- marketting_analysis.sql
+|    |-- mysql_joins.sql
+|    |-- order_analysis.sql
+|    |-- product_analysis.sql
 │
+|--03_Project_report/
+|    |-- report.md
+|
+|--04_PowerBI_dashboard/
+|    |-- dashboard_image.png
+|    |-- powerbi_dashboard.pbix
+|
 |-- README.md
 
 ```
@@ -163,11 +177,9 @@ This project strengthened practical skills in:
 * Generating business insights from structured data
 
 ___
+## Power BI Dashboard
 
-## Future Improvements
-
-* Build interactive dashboards using Power BI/Tableau.
-* Integrate Python for automated ETL and advanced analytics.
+<img width="1045" height="594" alt="image" src="https://github.com/user-attachments/assets/138a673c-a98c-4c47-a1ca-f0fa6ecc4dda" />
 
 ___
 
