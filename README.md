@@ -107,6 +107,7 @@ ___
 * Total Damaged Inventory
 ___
 ## Power BI Dashboard
+<img width="1045" height="594" alt="image" src="https://github.com/user-attachments/assets/455b293b-1f17-4599-bce7-b9f042179c5a" />
 
 ___
 
