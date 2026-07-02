@@ -19,7 +19,7 @@ ON blinkit_customers.customer_id = blinkit_orders.customer_id
 GROUP BY blinkit_customers.customer_segment
 ORDER BY total_revenue DESC;
 
--- Most Sold Products
+-- Most Sold Products By Product Name
 SELECT
 blinkit_products.product_name, #Pkey: product_id
 SUM(blinkit_order_items.quantity) AS total_quantity_sold #Fkey: product_id
@@ -40,6 +40,7 @@ ON blinkit_products.product_id=blinkit_order_items.product_id
 GROUP BY blinkit_products.category
 ORDER BY revenue DESC;
 
+
 -- Average Customer Rating by Delivery Status
 SELECT
 blinkit_delivery_performance.delivery_status, #Pkey: order_id
@@ -49,7 +50,7 @@ INNER JOIN blinkit_customer_feedback
 ON blinkit_delivery_performance.order_id=blinkit_customer_feedback.order_id
 GROUP BY blinkit_delivery_performance.delivery_status;
 
--- Orders by State (Not working)
+-- Orders by Area
 SELECT
 blinkit_customers.area, #Pkey: customer_id
 SUM(blinkit_orders.order_total) AS total_revenue #Fkey: customer_id
@@ -58,6 +59,16 @@ INNER JOIN blinkit_orders
 ON blinkit_customers.customer_id = blinkit_orders.customer_id
 GROUP BY blinkit_customers.area
 ORDER BY total_revenue DESC;
+
+-- Distribution of revenue by delivery status
+select
+blinkit_delivery_performance.delivery_status, #order_id
+sum(blinkit_orders.order_total) as total_orders
+from blinkit_delivery_performance
+inner join blinkit_orders
+on blinkit_delivery_performance.order_id=blinkit_orders.order_id
+group by blinkit_delivery_performance.delivery_status
+order by total_orders;
 
 -- Average Order Value by Customer Segment
 SELECT
@@ -69,7 +80,7 @@ ON blinkit_customers.customer_id = blinkit_orders.customer_id
 GROUP BY blinkit_customers.customer_segment
 ORDER BY average_order_value DESC;
 
--- Products Below Minimum Stock Level (Not working)
+-- Product-wise total damaged stocks
 SELECT
 blinkit_products.product_name, #Pkey: product_id
 SUM(blinkit_inventory.damaged_stock) AS total_damaged_stock #Fkey: product_id
@@ -80,7 +91,7 @@ GROUP BY blinkit_products.product_name
 ORDER BY total_damaged_stock DESC
 LIMIT 10;
 
--- Customer Feedback by Segment
+-- Average customer feedback by product segment
 SELECT
 blinkit_customers.customer_segment, #Pkey: customer_id 
 ROUND(AVG(blinkit_customer_feedback.rating),2) AS average_rating #Fkey: customer_id 
